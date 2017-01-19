@@ -9,8 +9,8 @@ var letters = 'ABCDEFGHIJKLMNOPRSTW';
 var startsWith = letters[Math.floor(Math.random() * letters.length)];
 var points = 0;
 var secondsRemaining = 60;
-var letter = startsWith.toString()
-var regex = new RegExp("\\b(" + letter + ")\\w+", "gi");
+var letter = startsWith.toString();
+var regex = new RegExp('\\b(' + letter + ')\\w+', 'gi');
 
 var app = {
   init: function(){
@@ -37,6 +37,7 @@ var app = {
   scoreGame: function(){
     $('input[class=answer').each(function(){
       var $answer = $(this).val();
+      $answer = $answer.toUpperCase();
       if ($answer.match(regex)) {
         points++;
       }

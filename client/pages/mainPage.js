@@ -13,17 +13,17 @@ var app = {
   render: function(){   
     app.bindClickEvents();
   },  
-  scrollBio: function(){
-    $('.bio').click(function(){
-      $('html, body').animate({
-        scrollTop: $('.portfolio-bio').offset().top
-      }, 1000, 'easeInOutExpo');
-    });
-  },
+  // scrollBio: function(){
+  //   $('.bio').click(function(){
+  //     $('html, body').animate({
+  //       scrollTop: $('.portfolio-bio').offset().top
+  //     }, 1000, 'easeInOutExpo');
+  //   });
+  // },
   goToWork: function(){
     $('.projects').click(function(){
       $('html, body').animate({
-        scrollTop: $('.portfolio-contact').offset().top
+        scrollTop: $('.portfolio-work').offset().top
       }, 1000, 'easeInOutExpo');
     });
   }, 
@@ -36,7 +36,7 @@ var app = {
     });
   },
   bindClickEvents: function(){
-    app.scrollBio();
+    // app.scrollBio();
     app.goToWork();
     app.scrollToTop();
   }

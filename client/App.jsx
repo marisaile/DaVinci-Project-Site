@@ -34,9 +34,9 @@ $(function() {
     case '/pages/todo.html':
       var todoListView = new TodoListView(); 
     break;
-    case '/pages/funnySquares.html':
-      funnySquares.init();
-    break;
+    // case '/pages/genericTimer.html':
+    //   timer.init();
+    // break;
     case '/pages/photoSearch.html':
       photoSearch.init(); 
     break;
